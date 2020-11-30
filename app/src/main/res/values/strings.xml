@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LiquirStore</string>
+    <string name="app_name">Liquor Store</string>
     <string-array name="sellers">
         <item>Negombo Liquor Store</item>
         <item>Colombo Liquor Store</item>

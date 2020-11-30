@@ -84,6 +84,7 @@ TextView nameView;
             public void onResponse(JSONObject response) {
 
                 Log.i("MyActivity", "MyClass.getView() — get item number "+response);
+                goToMain();
                // handleRecycler(response);// After the trespons e is recieved handleResponse() method will be called to read json response and take next steps.
             }
         }, new Response.ErrorListener() {
@@ -95,6 +96,11 @@ TextView nameView;
 
         requestQueue.add(jsonObjectRequest);
 
+    }
+    public void goToMain()
+    {
+        Intent intent=new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 
 
